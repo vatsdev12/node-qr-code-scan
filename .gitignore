@@ -1,2 +1,9 @@
-node_modules
+/node_modules
+/.env
+/nbproject/private/
+.env
 package-lock.json
+/uploads/
+/downloads/
+/nbproject/
+/app.log

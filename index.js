@@ -16,7 +16,7 @@ app.post("/scan", (req, res) => {
     const url = req.body.url;
 
     if (url.length === 0) res.send("Empty Data!");
-    qr.toDataURL(url, (err, src) => {
+    qr.toDataURL("https://bookcreator.com/wp-content/uploads/2019/01/teacher-created-books.jpg", (err, src) => {
         if (err) res.send("Error occured");
 
         res.render("scan", { src });
